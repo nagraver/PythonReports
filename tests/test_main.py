@@ -30,7 +30,7 @@ def test_load_data_empty_file(tmp_path):
     file = tmp_path / "empty.csv"
     file.write_text("")
     data = load_data([str(file)])
-    assert data == []
+    assert data == []   
 
 
 def test_load_data_custom_header(tmp_path):
