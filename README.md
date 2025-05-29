@@ -1,4 +1,8 @@
 # Запуск скрипта 
+## Через контейнер
+docker run --rm report:latest
+
+## Вручную
 uv sync
 
 uv run ./src/main.py data1.csv data2.csv --report payout
